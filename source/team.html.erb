@@ -6,7 +6,8 @@
       <li>
         <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img img-circle " %>
         <h3><%= gh_username.capitalize %></h3>
-       <%= <a href="https://github.com/#{gh_username}"> %> <i class="fa fa-github"></i> <%= gh_username.to_s%> </a>
+        <%= link_to "#{gh_username}", "https://github.com/#{gh_username}" %>
+        <i class="fa fa-github"></i>
       </li>
     <% end %>
   </ul>
